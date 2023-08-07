@@ -29,5 +29,4 @@ bin/
 .DS_Store
 
 ### Ignore it too ###
-coisas_pra_fazer.txt
-titulos.json
+.titulos.json

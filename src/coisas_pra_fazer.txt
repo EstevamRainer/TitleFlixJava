@@ -1,8 +1,0 @@
-Lembretes:
-//1- Em create File, fazer com que seja criado uma série/filme vindo de lá
-//2- Referências que deve ter em filme:
-titleV, yearV, releasedV, runtimeV, genreV, directorV, plotV, posterV, imdbRatingV.
-//3-Referências que deve ter em uma série:
-titleV, year em stringV, releasedV, runtimeV, genreV, Vwriter, Vplot, Vposter, VimdbRating, VtotalSeasons.
-//4- Resolver bug de não conseguir saber o imdbRating nem totalSeasons. (Ta dando null. Provavlemente por causa do Gson!)
-5- Resolver erro de caso o titulo não seja encontrado!
