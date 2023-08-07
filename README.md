@@ -1,2 +1,3 @@
-# TitleFlixJava
-Software criado em Java para procurar filmes e séries utilizando a API do OmDb
+<div align="center">
+  <h1>🎬 Title Flix 🎬</h1>
+</div>
