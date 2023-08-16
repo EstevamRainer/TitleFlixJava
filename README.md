@@ -14,5 +14,7 @@ Title Flix é um site com foco em ```criação de listas de filmes```. Por exemp
 
 <h2>❓ Quais são as funções do TitleFlixJava? ❓</h2>
 
+TitleFlix foi desenvolvido com o intuíto de facilitar as suas noites de filmes, apresentando uma imensa gama de filmes dos quais você pode assistir assim que possível. É possível fazer diversas listas importantes como: ```"Ver em Família"```, ```"Para rir"```, ```"Quando eu estiver pra baixo"```, etc.
+
 
 
