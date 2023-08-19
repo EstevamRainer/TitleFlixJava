@@ -19,7 +19,7 @@ public class Series extends Title {
         this.writer = verifyer.verifyError(titulo.writer());
         this.urlPoster = verifyer.verifyError(titulo.poster());
         this.requestTimeAndData = requestTimeAndData;
-        //Pega as informações da api e adiciona em serie
+        //Pega as informações da API e adiciona em serie
     }
     private final String yearInString;
     private final String writer;

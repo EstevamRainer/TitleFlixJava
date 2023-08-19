@@ -8,7 +8,7 @@ public class TitleRequest {
     public static void main(String[] args) throws IOException, InterruptedException {
         TitleSearcher titleSearcher = new TitleSearcher();
         titleSearcher.searchTitleWithQuestions();
-        TitleSearcher titleSearcher1 = new TitleSearcher("Avengers");
-        titleSearcher1.searchTitle();
+        TitleSearcher titleSearcher1 = new TitleSearcher();
+        titleSearcher1.searchTitle("Avengers");
     }
 }

@@ -14,3 +14,4 @@ public abstract class Fail {
     protected abstract String solution(String error);
     protected abstract boolean willApplySolution(String error);
 }
+// O objetivo dessa classe é verificar se houve algum erro em alguma pesquisa da API

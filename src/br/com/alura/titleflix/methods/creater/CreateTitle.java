@@ -26,6 +26,6 @@ public class CreateTitle {
             return new Movie(title, extraInfos, requestTime.returnDateAndTime());
         }
         return new TitleNotFound(requestTime.returnDateAndTime());
-        //o title é o JSON do ombd transformado em objeto, já o extra infos são o totalSeasons e o imdbRating
+        //O title é o JSON do ombd transformado em objeto, já o extra infos são o totalSeasons e o imdbRating
     }
 }

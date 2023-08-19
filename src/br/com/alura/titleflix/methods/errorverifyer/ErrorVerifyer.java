@@ -13,5 +13,5 @@ public class ErrorVerifyer {
 
         return fail.applySolution(information);
     }
-
 }
+//Aqui foi usado o conceito de Chain of Responsibility para verificar se existe algum erro nas informação adquiridas pela API

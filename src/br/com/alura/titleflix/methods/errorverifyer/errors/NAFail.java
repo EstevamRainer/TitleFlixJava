@@ -14,3 +14,5 @@ public class NAFail extends Fail {
         return error.equals("N/A");
     }
 }
+//Caso o resultado da API seja N/A é retornado uma string indisponível
+

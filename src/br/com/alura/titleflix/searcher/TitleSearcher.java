@@ -16,11 +16,6 @@ import java.util.List;
 import java.util.Scanner;
 
 public class TitleSearcher {
-    public TitleSearcher () {}
-    public TitleSearcher (String titleName){
-        this.titleName = titleName;
-    }
-    private String titleName;
     private final Gson gson = new GsonBuilder()
             .setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE)
             .setPrettyPrinting()
@@ -57,8 +52,9 @@ public class TitleSearcher {
             writer.close();
             System.out.println("Programa finalizado!");
         }
+        //Método para ser utilizado para fazer as perguntas quanto ao filme que quiser
     }
-    public void searchTitle() throws IOException, InterruptedException {
+    public void searchTitle(String titleName) throws IOException, InterruptedException {
         String busca = titleName;
             ApiOmdb api = new ApiOmdb(busca);
             String json = api.getJson();
@@ -72,6 +68,7 @@ public class TitleSearcher {
             writer.write(gson.toJson(myTitle));
             writer.close();
         }
+        //Método que precisa de parâmetros pré adicionados para funcionar
     }
 
 

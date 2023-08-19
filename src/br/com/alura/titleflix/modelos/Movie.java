@@ -17,7 +17,7 @@ public class Movie extends Title {
             this.director = verifyer.verifyError(titulo.director());
             this.urlPoster = verifyer.verifyError(titulo.poster());
             this.requestTimeAndData = requestTimeAndData;
-            //O construtor pega todos os dados da api e adiciona aqui
+            //O construtor pega todos os dados da API e os adiciona aqui
     }
     int year;
     @Override

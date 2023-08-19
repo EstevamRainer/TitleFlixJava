@@ -15,3 +15,4 @@ public class NoSolution extends Fail {
         return true;
     }
 }
+//Caso não seja encontrado nenhum problema com a informação aqui analizada da API, é retornado a informação sem qualquer modificação

@@ -4,7 +4,7 @@ import br.com.alura.titleflix.methods.stringconverter.parsers.StringInDouble;
 import br.com.alura.titleflix.methods.stringconverter.parsers.StringInInt;
 
 public class NumberConverter {
-    //as converções com try pra evitar erros
+    //As converções com try pra evitar erros
     public int convertInInt(String numberToBeConverted) {
         StringInInt stringInInt = new StringInInt(numberToBeConverted);
         try {

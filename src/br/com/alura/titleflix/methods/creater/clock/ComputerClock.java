@@ -13,3 +13,4 @@ public class ComputerClock {
         return formatedTime;
     }
 }
+//Essa classe têm o papel de fazer o horário e data ficarem organizados no JSON
