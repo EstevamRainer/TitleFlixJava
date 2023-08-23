@@ -49,6 +49,26 @@ Essa pasta têm como objetivo principal ser a saída dos arquivos .Json após a 
 
 <h3>Pasta Methods</h3>
 
-Nesta pasta temos alguns metódos que exercem diferentes funções durante a execução do projeto!
+<h4>ComputerClock</h4>
+
+ComputerClock é uma classe bem símples que têm como funcionalidade retornar a data/hora em que foi feito o request da API para ser adicionada no JSON criado.
 
 <h4>CreateTitle</h4>
+
+CreateTitle é uma das classes mais importantes do projeto. Ela têm como principal funcionalidade criar um objeto com base no que foi informado pela classe VerifyTitle e assim com as informações corretas criar a classe "Filme", "Série" ou caso não seja encontrado uma título, "TitleNotFound".
+
+<h4>ErrorVerifier</h4>
+
+Essa classe verifica informações fornecidas pela API e se a informação não for adquirida de uma forma esperada, essa classe já a corrige para o programa conseguir identifica-la sem maiores problemas.
+
+<h4>NumberConverter</h4>
+
+Essa é uma classe com uma implementação inteligente que corrige dados numéricos incorretos ou inválidos enviados pela API transformando-os em dados válidos que poderão ser lidos pelo programa sem maiores problemas assim evitando exceptions.
+
+<h4>VerifyTitle</h4>
+
+Essa classe pode ser facilmente confundida com a CreateTitle, porém ela desempenha um papel diferente na aplicação. Ela analiza do que se trata o título requisitado e envia para o CreateTitle um comando sobre o que deve ser criado, se é um Filme, Série ou um se é um Título Inválido.
+
+
+
+
