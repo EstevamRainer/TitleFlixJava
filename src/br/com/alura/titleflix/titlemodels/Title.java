@@ -1,4 +1,4 @@
-package br.com.alura.titleflix.modelos;
+package br.com.alura.titleflix.titlemodels;
 
 
 public abstract class Title implements Comparable<Title> {

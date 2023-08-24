@@ -11,7 +11,7 @@ public class ApiOmdb {
     public ApiOmdb(String search) {
         this.search = search;
     }
-    //busca recebe o filme adicionado na classe da qual foi chamado
+    //busca recebe o titulo adicionado na classe da qual foi chamado
 
     public String getJson() throws IOException, InterruptedException{
         //aqui é criado a conexão com a api do omdb

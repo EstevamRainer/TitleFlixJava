@@ -1,4 +1,4 @@
-package br.com.alura.titleflix.modelos;
+package br.com.alura.titleflix.titlemodels;
 
 public class TitleNotFound extends Title {
     public TitleNotFound(String requestDateAndTime){

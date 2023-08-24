@@ -1,11 +1,11 @@
-package br.com.alura.titleflix.modelos;
+package br.com.alura.titleflix.titlemodels;
 
-import br.com.alura.titleflix.methods.errorverifyer.ErrorVerifyer;
+import br.com.alura.titleflix.methods.errorverifyer.ErrorVerifier;
 import br.com.alura.titleflix.methods.stringconverter.NumberConverter;
 
 public class Movie extends Title {
-    public Movie(TituloOmdb titulo, RatingAndSeasons rating, String requestTimeAndData) {
-        ErrorVerifyer verifyer = new ErrorVerifyer();
+    public Movie(TitleOmdb titulo, RatingAndSeasons rating, String requestTimeAndData) {
+        ErrorVerifier verifyer = new ErrorVerifier();
         NumberConverter numberConverter = new NumberConverter();
             this.title = verifyer.verifyError(titulo.title());
             this.year = numberConverter.convertInInt(verifyer.verifyError(titulo.year()));

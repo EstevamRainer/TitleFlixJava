@@ -2,9 +2,9 @@ package br.com.alura.titleflix.searcher;
 
 import br.com.alura.titleflix.apisearch.ApiOmdb;
 import br.com.alura.titleflix.methods.creater.CreateTitle;
-import br.com.alura.titleflix.modelos.RatingAndSeasons;
-import br.com.alura.titleflix.modelos.Title;
-import br.com.alura.titleflix.modelos.TituloOmdb;
+import br.com.alura.titleflix.titlemodels.RatingAndSeasons;
+import br.com.alura.titleflix.titlemodels.Title;
+import br.com.alura.titleflix.titlemodels.TitleOmdb;
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -39,7 +39,7 @@ public class TitleSearcher {
             ApiOmdb api = new ApiOmdb(busca);
             String json = api.getJson();
 
-            TituloOmdb meuTituloOmdb = gson.fromJson(json, TituloOmdb.class);
+            TitleOmdb meuTituloOmdb = gson.fromJson(json, TitleOmdb.class);
             RatingAndSeasons ratingAndSeasons = gsonIdentity.fromJson(json, RatingAndSeasons.class);
             CreateTitle creater = new CreateTitle(meuTituloOmdb, ratingAndSeasons);
             Title myTitle = creater.returnTitle();
@@ -58,7 +58,7 @@ public class TitleSearcher {
         String busca = titleName;
             ApiOmdb api = new ApiOmdb(busca);
             String json = api.getJson();
-            TituloOmdb meuTituloOmdb = gson.fromJson(json, TituloOmdb.class);
+            TitleOmdb meuTituloOmdb = gson.fromJson(json, TitleOmdb.class);
             RatingAndSeasons ratingAndSeasons = gsonIdentity.fromJson(json, RatingAndSeasons.class);
             CreateTitle creater = new CreateTitle(meuTituloOmdb, ratingAndSeasons);
             Title myTitle = creater.returnTitle();

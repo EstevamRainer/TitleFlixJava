@@ -4,7 +4,7 @@ import br.com.alura.titleflix.methods.errorverifyer.errors.Fail;
 import br.com.alura.titleflix.methods.errorverifyer.errors.NAFail;
 import br.com.alura.titleflix.methods.errorverifyer.errors.NoSolution;
 
-public class ErrorVerifyer {
+public class ErrorVerifier {
     public String verifyError(String information) {
 
         Fail fail = new NAFail(

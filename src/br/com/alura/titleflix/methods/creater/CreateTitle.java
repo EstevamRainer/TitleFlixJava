@@ -2,15 +2,12 @@ package br.com.alura.titleflix.methods.creater;
 
 import br.com.alura.titleflix.methods.VerifyTitle;
 import br.com.alura.titleflix.methods.creater.clock.ComputerClock;
-import br.com.alura.titleflix.modelos.*;
-
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
+import br.com.alura.titleflix.titlemodels.*;
 
 public class CreateTitle {
-    TituloOmdb title;
+    TitleOmdb title;
     RatingAndSeasons extraInfos;
-    public CreateTitle(TituloOmdb title, RatingAndSeasons extraInfos){
+    public CreateTitle(TitleOmdb title, RatingAndSeasons extraInfos){
         this.title = title;
         this.extraInfos = extraInfos;
     }
