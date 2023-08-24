@@ -43,11 +43,11 @@ Cada classe nesse projeto têm seu trabalho e propósito. Estarei listando a seg
 
 Essa Classe têm um papel fundamental no projeto, que é o de adquirir o **JSON** do titulo requisitado utilizando o ```HTTPClient``` e retorna-lo para a Classe da qual utilizou o método _getJson_ dessa classe. 
 
-<h3>Pasta Json Exit</h3>
+<h3>Pacote Json Exit</h3>
 
-Essa pasta têm como objetivo principal ser a saída dos arquivos .Json após a execução do TitleFlix
+Esse pacote têm como objetivo principal ser a saída dos arquivos .Json após a execução do TitleFlix
 
-<h3>Pasta Methods</h3>
+<h3>Pacote Methods</h3>
 
 <h4>ComputerClock</h4>
 
@@ -69,6 +69,38 @@ Essa é uma classe com uma implementação inteligente que corrige dados numéri
 
 Essa classe pode ser facilmente confundida com a CreateTitle, porém ela desempenha um papel diferente na aplicação. Ela analiza do que se trata o título requisitado e envia para o CreateTitle um comando sobre o que deve ser criado, se é um Filme, Série ou um se é um Título Inválido.
 
+<h3>Pacote TitleModels</h3>
 
+Nesse pacote se encontra as Classes que modelam o objeto que será criado.
 
+<h4>Title</h4>
+
+Essa é uma Classe abstrata que contém todas as informações que tanto uma série quanto um filme devem ter, como por exemplo: nome, se o titulo em questão já foi lançado e duração.
+
+<h4>Movie e Series</h4>
+
+Ambas as classes herdam Title, ou seja têm suas mesmas informações porém com um acréscimo, por exemplo: Movie têm nome, ano de lançamento e duração, porém também contém o ano de lançamento do filme. Já a séries contém o roteirista e a quantidade total de temporadas. Ambas essas Classes contém um construtor que adquire informações da classe ```TitleOMDb```.
+
+<h4>TitleOMDb e RatingAndSeasons</h4>
+
+Essas são as duas classes record do projeto que guardam as informações do Título. TitleOMDb guarda as seguintes informações sobre o Título: Nome, Ano de Lançamento, Duração, Se é uma Série ou Filme, se será ou ja foi lançado, Gênero, Diretor, Sinópse, Link do Pôster, Roteirista e se a requisição ocorreu corretamente. 
+<br>
+<br>
+Já a Classe RatingAndSeasons guarda apenas informações sobre a nota e quantidade de temporadas da Série, pois ao usar o Gson houve um bug que essas informações não eram adquiridas como as outras, por isso tive que criar uma classe record com apenas essas informações com o propósito de elas serem adquiridas corretamente.
+
+<h4>TitleNotFound</h4>
+
+O propósito dessa classe é ser criada ao não ser encontrado o título específicado pelo Usuário.
+
+<h3>TitleSearcher</h3>
+
+Essa classe utiliza do padrão Facade para facilitar a hora do uso da aplicação, resumindo-a em apenas dois métodos que são muito intuítivos e fáceis de serem utilizados pelo Usuário.
+
+<h3>TitleRequest</h3>
+
+Essa é a classe principal do projeto, da qual se têm o método Main para a utilização do projeto sem maiores problemas.
+
+<div align="Center">
+<h2>😁👍 Obrigado pela Atenção 😁👍</h2>
+</div>
 
