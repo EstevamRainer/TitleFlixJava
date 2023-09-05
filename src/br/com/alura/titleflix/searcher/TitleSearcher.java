@@ -47,7 +47,7 @@ public class TitleSearcher {
             titulos.add(myTitle);
             System.out.println(myTitle);
             System.out.println(titulos);
-            FileWriter writer = new FileWriter("C:/Users/estev/Documents/Projetos da Alura/Java/TitleFlix/TtileFlix/src/br/com/alura/titleflix/jsonexit/titulos.json");
+            FileWriter writer = new FileWriter("src/br/com/alura/titleflix/jsonexit/titulos.json");
             writer.write(gson.toJson(titulos));
             writer.close();
             System.out.println("Programa finalizado!");
@@ -64,11 +64,9 @@ public class TitleSearcher {
             Title myTitle = creater.returnTitle();
             myTitle.titleDescription();
             System.out.println(myTitle);
-            FileWriter writer = new FileWriter("C:/Users/estev/Documents/Projetos da Alura/Java/TitleFlix/TtileFlix/src/br/com/alura/titleflix/jsonexit/titulo.json");
+            FileWriter writer = new FileWriter("src/br/com/alura/titleflix/jsonexit/titulo.json");
             writer.write(gson.toJson(myTitle));
             writer.close();
         }
         //Método que precisa de parâmetros pré adicionados para funcionar
     }
-
-

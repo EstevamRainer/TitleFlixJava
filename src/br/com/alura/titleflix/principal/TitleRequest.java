@@ -11,6 +11,6 @@ public class TitleRequest {
         //Procura títulos durante a execução do programa
         TitleSearcher titleSearcher1 = new TitleSearcher();
         titleSearcher1.searchTitle("Avengers");
-        //Procura o títuli predeterminado
+        //Procura o título predeterminado
     }
 }

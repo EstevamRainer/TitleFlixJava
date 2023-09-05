@@ -1,6 +1,5 @@
 package br.com.alura.titleflix.titlemodels;
 
-
 public abstract class Title implements Comparable<Title> {
     protected String title;
     protected String released;
